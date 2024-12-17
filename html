@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone - Магазин электроники</title>
+    <link rel="stylesheet" href="maratx.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <h1>TechZone</h1>
+            <nav>
+                <ul>
+                    <li><a href="#products">Товары</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    <li><a href="#cart">Корзина (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Товары -->
+    <section id="products">
+        <div class="container">
+            <h2>Наши товары</h2>
+            <div class="product-list">
+                <!-- Товары -->
+                <div class="product" data-name="Ноутбук" data-price="800">
+                    <img src="https://via.placeholder.com/150" alt="Ноутбук">
+                    <h3>Ноутбук</h3>
+                    <p class="price">$800</p>
+                    <button class="btn add-to-cart">Добавить в корзину</button>
+                </div>
+
+                <div class="product" data-name="Смартфон" data-price="500">
+                    <img src="https://via.placeholder.com/150" alt="Смартфон">
+                    <h3>Смартфон</h3>
+                    <p class="price">$500</p>
+                    <button class="btn add-to-cart">Добавить в корзину</button>
+                </div>
+
+                <div class="product" data-name="Наушники" data-price="100">
+                    <img src="https://via.placeholder.com/150" alt="Наушники">
+                    <h3>Наушники</h3>
+                    <p class="price">$100</p>
+                    <button class="btn add-to-cart">Добавить в корзину</button>
+                </div>
+
+                <div class="product" data-name="Планшет" data-price="400">
+                    <img src="https://via.placeholder.com/150" alt="Планшет">
+                    <h3>Планшет</h3>
+                    <p class="price">$400</p>
+                    <button class="btn add-to-cart">Добавить в корзину</button>
+                </div>
+
+                <div class="product" data-name="Смарт-часы" data-price="200">
+                    <img src="https://via.placeholder.com/150" alt="Смарт-часы">
+                    <h3>Смарт-часы</h3>
+                    <p class="price">$200</p>
+                    <button class="btn add-to-cart">Добавить в корзину</button>
+                </div>
+
+                <div class="product" data-name="Игровая консоль" data-price="600">
+                    <img src="https://via.placeholder.com/150" alt="Игровая консоль">
+                    <h3>Игровая консоль</h3>
+                    <p class="price">$600</p>
+                    <button class="btn add-to-cart">Добавить в корзину</button>
+                </div>
+
+                <div class="product" data-name="Веб-камера" data-price="150">
+                    <img src="https://via.placeholder.com/150" alt="Веб-камера">
+                    <h3>Веб-камера</h3>
+                    <p class="price">$150</p>
+                    <button class="btn add-to-cart">Добавить в корзину</button>
+                </div>
+
+                <div class="product" data-name="Монитор 24 дюйма" data-price="300">
+                    <img src="https://via.placeholder.com/150" alt="Монитор">
+                    <h3>Монитор 24 дюйма</h3>
+                    <p class="price">$300</p>
+                    <button class="btn add-to-cart">Добавить в корзину</button>
+                </div>
+
+                <div class="product" data-name="Клавиатура механическая" data-price="80">
+                    <img src="https://via.placeholder.com/150" alt="Клавиатура">
+                    <h3>Клавиатура механическая</h3>
+                    <p class="price">$80</p>
+                    <button class="btn add-to-cart">Добавить в корзину</button>
+                </div>
+                <div class="product" data-name="Мышь беспроводная" data-price="40">
+                    <img src="https://via.placeholder.com/150" alt="Мышь">
+                    <h3>Мышь беспроводная</h3>
+                    <p class="price">$40</p>
+                    <button class="btn add-to-cart">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Корзина -->
+    <section id="cart">
+        <div class="container">
+            <h2>Корзина</h2>
+            <ul id="cart-items"></ul>
+            <p>Общая стоимость: <span id="total-price">$0</span></p>
+            <button id="checkout" class="btn">Оформить заказ</button>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>TechZone - ваш надёжный поставщик современной электроники по лучшим ценам.</p>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Ваш email" required>
+                <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                <button type="submit" class="btn">Отправить сообщение</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TechZone. Все права защищены.</p>
+            <p>Телефон: <a href="tel:+79696696904">+7-969-669-69-04</a></p>
+        </div>
+    </footer>
+
+    <script src="C:\Users\Stu-1-02\Desktop\мои работы\maratxaz.js"></script>
+</body>
+</html>
